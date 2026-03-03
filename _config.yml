@@ -1,0 +1,52 @@
+# GitHub Pages配置
+
+# 基础URL
+baseurl: "/writing-works"
+
+# 网站标题
+title: "唐程辉的小说作品集"
+
+# 作者
+author: "唐程辉"
+
+# 描述
+description: "按小说分类的完整写作仓库"
+
+# 主题（可选）
+# theme: jekyll-theme-minimal
+
+# 插件
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# 排除文件
+exclude:
+  - .github/
+  - .gitignore
+  - README.md
+  - LICENSE
+
+# 包含文件
+include:
+  - "*.html"
+  - "*.md"
+  - "*.doc"
+  - "*.docx"
+  - "*.jpg"
+  - "*.png"
+  - "*.pdf"
+
+# 默认设置
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      
+# 构建设置
+markdown: kramdown
+highlighter: rouge
+
+# 时间格式
+timezone: Asia/Shanghai
